@@ -92,8 +92,8 @@ export default function ServicesSection() {
             </p>
           </div>
 
-          {/* ── Right column: Two Column List Grid with Bullets ── */}
-          <ul
+          {/* ── Right column: Two Column List Grid with Numbers ── */}
+          <ol
             className="services-list-grid"
             style={{
               listStyle: "none",
@@ -107,27 +107,30 @@ export default function ServicesSection() {
               rowGap: "22px",
             }}
           >
-            {SERVICES.map((service) => (
+            {SERVICES.map((service, index) => (
               <li
                 key={service}
                 className="service-item"
                 style={{
                   display: "flex",
-                  alignItems: "center",
+                  alignItems: "baseline",
                   gap: "14px",
                 }}
               >
                 <span
                   style={{
-                    width: "6px",
-                    height: "6px",
-                    borderRadius: "50%",
-                    backgroundColor: "var(--color-primary, #78716C)",
+                    fontFamily: "var(--font-mono, 'Source Code Pro', monospace)",
+                    fontSize: "12px",
+                    fontWeight: 600,
+                    letterSpacing: "0.05em",
+                    color: "var(--color-text-secondary, #57534E)",
+                    minWidth: "24px",
+                    userSelect: "none",
                     flexShrink: 0,
-                    opacity: 0.85,
                   }}
-                  aria-hidden="true"
-                />
+                >
+                  {String(index + 1).padStart(2, "0")}
+                </span>
 
                 <span
                   style={{
@@ -142,7 +145,7 @@ export default function ServicesSection() {
                 </span>
               </li>
             ))}
-          </ul>
+          </ol>
         </div>
       </div>
 

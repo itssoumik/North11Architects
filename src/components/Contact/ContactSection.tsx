@@ -446,7 +446,7 @@ export default function ContactSection() {
                 style={{
                   display: "block",
                   fontFamily: "var(--font-mono, 'Source Code Pro', monospace)",
-                  fontSize: "18px",
+                  fontSize: "16px",
                   fontWeight: 600,
                   letterSpacing: "0.08em",
                   textTransform: "uppercase",

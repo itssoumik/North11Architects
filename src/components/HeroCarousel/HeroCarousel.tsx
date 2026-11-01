@@ -49,11 +49,10 @@ const slides: SlideData[] = [
   },
 ];
 
-const AUTO_SLIDE_INTERVAL = 5000;
+const AUTO_SLIDE_INTERVAL = 3000;
 
 export default function HeroCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isPaused, setIsPaused] = useState(false);
   const touchStartX = useRef<number | null>(null);
   const touchEndX = useRef<number | null>(null);
 
@@ -66,12 +65,11 @@ export default function HeroCarousel() {
   }, []);
 
   useEffect(() => {
-    if (isPaused) return;
     const timer = setInterval(() => {
       nextSlide();
     }, AUTO_SLIDE_INTERVAL);
     return () => clearInterval(timer);
-  }, [isPaused, nextSlide]);
+  }, [nextSlide]);
 
   const handleTouchStart = (e: React.TouchEvent) => {
     touchStartX.current = e.touches[0].clientX;
@@ -97,8 +95,6 @@ export default function HeroCarousel() {
     <section
       id="hero"
       className="hero-carousel-height relative w-full md:min-h-[640px] overflow-hidden bg-[#0c0d0e]"
-      onMouseEnter={() => setIsPaused(true)}
-      onMouseLeave={() => setIsPaused(false)}
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
