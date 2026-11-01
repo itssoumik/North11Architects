@@ -27,10 +27,10 @@
     --color-warning: #CA8A04;
     --color-error: #DC2626;
 
-    /* Fonts */
-    --font-serif: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
-    --font-sans: 'Inter', -apple-system, 'Segoe UI', Helvetica, sans-serif;
-    --font-mono: 'Source Code Pro', 'Fira Code', Consolas, monospace;
+    /* Fonts — values come from next/font CSS variables set on <html> */
+    --font-serif: var(--font-serif, 'Libre Baskerville'), Georgia, 'Times New Roman', serif;
+    --font-sans: var(--font-sans, 'Inter'), -apple-system, 'Segoe UI', Helvetica, sans-serif;
+    --font-mono: var(--font-mono, 'Source Code Pro'), 'Fira Code', Consolas, monospace;
 
     /* Legacy Dark Mode fallback tokens for Hero */
     --bg-primary: #0c0d0e;

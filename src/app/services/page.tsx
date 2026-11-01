@@ -7,6 +7,20 @@ export const metadata: Metadata = {
   title: "Our Services",
   description:
     "Integrated architectural solutions spanning architectural drawings, structural engineering, interior design, building plan sanctions, 3D visualisation, and legal documentation.",
+  alternates: {
+    canonical: "/services",
+  },
+  openGraph: {
+    title: "Our Services | North11 Architects",
+    description:
+      "Integrated architectural solutions spanning architectural drawings, structural engineering, interior design, building plan sanctions, 3D visualisation, and legal documentation.",
+    url: "/services",
+  },
+  twitter: {
+    title: "Our Services | North11 Architects",
+    description:
+      "Integrated architectural solutions — drawings, engineering, interiors, sanctions & more.",
+  },
 };
 
 export default function ServicesPage() {

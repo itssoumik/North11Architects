@@ -94,10 +94,10 @@ export default function ContactSection() {
                     marginBottom: "6px",
                   }}
                 >
-                  General Inquiries
+                  Chief Architect
                 </span>
                 <a
-                  href="mailto:contact@north11architects.com"
+                  href="mailto:chiefachitect@duck.com"
                   style={{
                     fontFamily: "var(--font-sans, 'Inter', sans-serif)",
                     fontSize: "17px",
@@ -117,7 +117,7 @@ export default function ContactSection() {
                     e.currentTarget.style.color = "var(--color-text-primary, #1C1917)";
                   }}
                 >
-                  contact@north11architects.com
+                  chiefachitect@duck.com
                 </a>
               </div>
 
@@ -135,10 +135,10 @@ export default function ContactSection() {
                     marginBottom: "6px",
                   }}
                 >
-                  Projects &amp; Consultations
+                  Executive Director
                 </span>
                 <a
-                  href="mailto:projects@north11architects.com"
+                  href="mailto:executivedirector@duck.com"
                   style={{
                     fontFamily: "var(--font-sans, 'Inter', sans-serif)",
                     fontSize: "17px",
@@ -158,7 +158,7 @@ export default function ContactSection() {
                     e.currentTarget.style.color = "var(--color-text-primary, #1C1917)";
                   }}
                 >
-                  projects@north11architects.com
+                  executivedirector@duck.com
                 </a>
               </div>
 
@@ -179,7 +179,7 @@ export default function ContactSection() {
                   Direct Telephone
                 </span>
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+918697208818"
                   style={{
                     fontFamily: "var(--font-sans, 'Inter', sans-serif)",
                     fontSize: "17px",
@@ -199,7 +199,7 @@ export default function ContactSection() {
                     e.currentTarget.style.color = "var(--color-text-primary, #1C1917)";
                   }}
                 >
-                  +91 98765 43210
+                  +91 86972 08818
                 </a>
               </div>
             </div>
@@ -468,14 +468,14 @@ export default function ContactSection() {
                 We are always eager to meet motivated architects, draftspersons, structural
                 engineers, and surveyors. You can mail your CV and portfolio to{" "}
                 <a
-                  href="mailto:careers@north11architects.com"
+                  href="mailto:chiefachitect@duck.com"
                   style={{
                     color: "var(--color-text-primary, #1C1917)",
                     fontWeight: 600,
                     textDecoration: "underline",
                   }}
                 >
-                  careers@north11architects.com
+                  chiefachitect@duck.com
                 </a>
                 .
               </p>
