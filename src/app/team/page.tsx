@@ -6,20 +6,20 @@ import Footer from "@/components/Footer/Footer";
 export const metadata: Metadata = {
   title: "Our Team",
   description:
-    "Meet the multidisciplinary collective of architects, engineers, legal heads, and surveyors driving excellence at North11 Architects.",
+    "Meet Founder & Chief Architect Sahnik Parui and the collective of architects, structural engineers, surveyors, and specialists at North11 Architects in Howrah.",
   alternates: {
     canonical: "/team",
   },
   openGraph: {
-    title: "Our Team | North11 Architects",
+    title: "Our Team | Led by Sahnik Parui | North11 Architects",
     description:
-      "Meet the multidisciplinary collective of architects, engineers, legal heads, and surveyors driving excellence at North11 Architects.",
+      "Meet Founder & Chief Architect Sahnik Parui and the collective of architects, structural engineers, surveyors, and specialists at North11 Architects in Howrah.",
     url: "/team",
   },
   twitter: {
-    title: "Our Team | North11 Architects",
+    title: "Our Team | Led by Sahnik Parui | North11 Architects",
     description:
-      "Meet the architects, engineers, and specialists behind North11 Architects.",
+      "Meet Founder & Chief Architect Sahnik Parui and the team at North11 Architects.",
   },
 };
 

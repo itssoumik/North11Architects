@@ -3,8 +3,17 @@ import Navbar from "@/components/Navbar/Navbar";
 import HeroCarousel from "@/components/HeroCarousel/HeroCarousel";
 
 export const metadata: Metadata = {
+  title: "North11 Architects & Planners",
+  description:
+    "Looking for the best architectural firm in Howrah? Founded by Chief Architect Sahnik Parui, North11 Architects delivers world-class architecture, building sanctions, structural engineering & interior design.",
   alternates: {
     canonical: "/",
+  },
+  openGraph: {
+    title: "North11 Architects & Planners | Founder & Chief Architect Sahnik Parui",
+    description:
+      "Looking for the best architectural firm in Howrah? Led by Chief Architect Sahnik Parui, North11 Architects delivers comprehensive architectural design, sanction plans & engineering.",
+    url: "/",
   },
 };
 
@@ -27,8 +36,7 @@ export default function Home() {
             borderWidth: 0,
           }}
         >
-          North11 Architects — Architecture &amp; Engineering Firm in Howrah,
-          West Bengal
+          North11 Architects &amp; Planners — Premier Architectural Firm in Howrah founded by Sahnik Parui (Chief Architect)
         </h1>
         <HeroCarousel />
       </main>

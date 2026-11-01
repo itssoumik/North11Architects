@@ -96,7 +96,7 @@ export default function HeroCarousel() {
   return (
     <section
       id="hero"
-      className="relative w-full h-screen min-h-[640px] overflow-hidden bg-[#0c0d0e]"
+      className="hero-carousel-height relative w-full md:min-h-[640px] overflow-hidden bg-[#0c0d0e]"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       onTouchStart={handleTouchStart}
@@ -148,12 +148,13 @@ export default function HeroCarousel() {
         })}
       </div>
 
-      {/* Bottom Left Project Caption*/}
+      {/* Project Caption */}
       <div
         className="absolute z-20 pointer-events-none transition-all duration-700"
         style={{
-          bottom: "clamp(2.5rem, 5vw, 4.5rem)",
-          left: "clamp(2rem, 6vw, 6rem)",
+          bottom: "max(clamp(1.5rem, 5vw, 4.5rem), calc(env(safe-area-inset-bottom, 0px) + 1.25rem))",
+          left: "max(clamp(1.5rem, 6vw, 6rem), calc(env(safe-area-inset-left, 0px) + 1.25rem))",
+          right: "max(clamp(1.5rem, 6vw, 6rem), calc(env(safe-area-inset-right, 0px) + 1.25rem))",
         }}
       >
         <div key={currentIndex} className="animate-[fadeIn_0.6s_ease-out]">

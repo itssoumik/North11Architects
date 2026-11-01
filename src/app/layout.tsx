@@ -38,30 +38,38 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
 
   title: {
-    default: "North11 Architects — Architecture & Engineering Firm in Howrah",
+    default: "North11 Architects & Planners",
     template: "%s | North11 Architects",
   },
 
   description:
-    "North11 Architects & Planners is a leading architecture and engineering firm in Howrah, West Bengal — crafting spaces where form meets eternal function. Architectural drawings, structural engineering, interior design, building plan sanctions & more.",
+    "North11 Architects & Planners, founded by Chief Architect Sahnik Parui, is a premier architecture and engineering firm in Howrah & Kolkata, West Bengal. We specialize in architectural design, building plan sanctions, structural engineering, 3D visualization, and interior design.",
 
   keywords: [
-    "architect",
-    "architecture firm",
-    "Howrah architect",
-    "West Bengal architecture",
-    "building plan sanction",
-    "structural engineering",
-    "interior design",
+    "Sahnik Parui",
+    "Sahnik Parui architect",
+    "Sahnik Parui North11",
     "North11 Architects",
-    "3D elevation",
-    "DPR",
-    "landscape design",
-    "site supervision",
+    "North11 Architects & Planners",
+    "architectural firm in Howrah",
+    "best architectural firm in Howrah",
+    "architect in Howrah",
+    "top architects in Howrah",
+    "architects near me Howrah",
+    "building plan sanction Howrah",
+    "architecture firm Kolkata Howrah",
+    "structural engineer Howrah",
+    "interior designer Howrah",
+    "Howrah municipal corporation building plan",
+    "BL&LRO mutation Howrah",
+    "3D elevation Howrah",
   ],
 
-  authors: [{ name: "North11 Architects & Planners" }],
-  creator: "North11 Architects & Planners",
+  authors: [
+    { name: "Sahnik Parui", url: `${siteUrl}/team` },
+    { name: "North11 Architects & Planners", url: siteUrl },
+  ],
+  creator: "Sahnik Parui",
   publisher: "North11 Architects & Planners",
 
   applicationName: "North11 Architects",
@@ -87,24 +95,24 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: siteUrl,
     siteName: "North11 Architects & Planners",
-    title: "North11 Architects — Architecture & Engineering Firm",
+    title: "North11 Architects & Planners | Founder & Chief Architect Sahnik Parui",
     description:
-      "Leading architecture and engineering firm crafting spaces where form meets eternal function. Architectural drawings, structural engineering, interior design & more.",
+      "Premier architectural and engineering firm in Howrah, West Bengal led by Chief Architect Sahnik Parui. Architectural drawings, building sanctions, structural engineering, and interior design.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "North11 Architects & Planners",
+        alt: "North11 Architects & Planners - Led by Sahnik Parui",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "North11 Architects — Architecture & Engineering Firm",
+    title: "North11 Architects & Planners | Sahnik Parui",
     description:
-      "Leading architecture and engineering firm crafting spaces where form meets eternal function.",
+      "Premier architectural and engineering firm in Howrah, West Bengal led by Chief Architect Sahnik Parui.",
     images: ["/og-image.png"],
   },
 };
@@ -114,9 +122,25 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "Person",
+      "@id": `${siteUrl}/#sahnikparui`,
+      name: "Sahnik Parui",
+      jobTitle: "Founder & Chief Architect",
+      worksFor: {
+        "@id": `${siteUrl}/#organization`,
+      },
+      image: `${siteUrl}/Team/1%20Sahnik%20Parui-%20Founder%20%26%20Chief%20Architect.jpg`,
+      email: "chiefachitect@duck.com",
+      telephone: "+918697208818",
+      url: `${siteUrl}/team`,
+      description:
+        "Sahnik Parui is an architect and the Founder & Chief Architect of North11 Architects & Planners in Howrah, West Bengal.",
+    },
+    {
       "@type": "Organization",
       "@id": `${siteUrl}/#organization`,
       name: "North11 Architects & Planners",
+      alternateName: ["North11 Architects", "North 11 Architects", "North11"],
       url: siteUrl,
       logo: {
         "@type": "ImageObject",
@@ -124,8 +148,11 @@ const jsonLd = {
         width: 240,
         height: 60,
       },
+      founder: {
+        "@id": `${siteUrl}/#sahnikparui`,
+      },
       description:
-        "Leading architecture and engineering firm crafting spaces where form meets eternal function.",
+        "Leading architecture and engineering firm in Howrah, West Bengal founded by Sahnik Parui. Delivering comprehensive architectural design, structural engineering, building plan sanctions, and project management.",
       email: ["chiefachitect@duck.com", "executivedirector@duck.com"],
       telephone: "+918697208818",
       address: {
@@ -136,15 +163,33 @@ const jsonLd = {
       },
     },
     {
-      "@type": "LocalBusiness",
+      "@type": "ProfessionalService",
       "@id": `${siteUrl}/#localbusiness`,
       name: "North11 Architects & Planners",
+      alternateName: "Sahnik Parui - North11 Architects",
       url: siteUrl,
       image: `${siteUrl}/Logo/logo transparent.png`,
       description:
-        "Architecture and engineering firm offering architectural drawings, structural engineering, interior design, building plan sanctions, 3D visualisation, and legal documentation.",
+        "Top architectural and engineering firm in Howrah, West Bengal offering architectural drawings, building plan sanctions, structural design, interior design, 3D elevation, and surveying.",
       email: ["chiefachitect@duck.com", "executivedirector@duck.com"],
       telephone: "+918697208818",
+      founder: {
+        "@id": `${siteUrl}/#sahnikparui`,
+      },
+      areaServed: [
+        {
+          "@type": "City",
+          name: "Howrah",
+        },
+        {
+          "@type": "City",
+          name: "Kolkata",
+        },
+        {
+          "@type": "AdministrativeArea",
+          name: "West Bengal",
+        },
+      ],
       address: {
         "@type": "PostalAddress",
         addressLocality: "Howrah",

@@ -1,17 +1,24 @@
 const SERVICES = [
   "Architectural Drawings",
-  "Structural Drawings",
+  "Working Drawings & Space Planning",
+  "Structural Design & Analysis",
+  "Foundation & Framing Layouts",
   "Interior Design",
   "Building Plan Sanction",
   "3D Elevation & Visualisation",
+  "360° VR Walkthrough Experience",
   "Estimation & Valuation",
   "Detailed Project Reports (DPR)",
   "Landscape Design",
   "Site Supervision",
+  "Land Surveying",
+  "Topographical Mapping",
   "Legal Documentation",
   "BL&LRO Land Mutation",
+  "Land Classification & Conversion",
   "Municipal Corporation Mutation",
 ];
+
 
 export default function ServicesSection() {
   return (
@@ -78,56 +85,54 @@ export default function ServicesSection() {
                 maxWidth: "480px",
               }}
             >
-              North11 Architects and Planners offers integrated solutions in architecture,
+              <b>North11 Architects and Planners</b> offers integrated solutions in architecture,
               engineering, interior design, and project management. From conceptualisation
               and statutory approvals to construction supervision and property documentation,
               we bring every essential service under one roof.
             </p>
           </div>
 
-          {/* ── Right column: Two Column List Grid ── */}
-          <ol
+          {/* ── Right column: Two Column List Grid with Bullets ── */}
+          <ul
             className="services-list-grid"
             style={{
               listStyle: "none",
               margin: 0,
               padding: 0,
               display: "grid",
-              gridTemplateRows: "repeat(6, auto)",
+              gridTemplateColumns: "repeat(2, 1fr)",
+              gridTemplateRows: `repeat(${Math.ceil(SERVICES.length / 2)}, auto)`,
               gridAutoFlow: "column",
-              columnGap: "40px",
-              rowGap: "24px"
+              columnGap: "48px",
+              rowGap: "22px",
             }}
           >
-            {SERVICES.map((service, index) => (
+            {SERVICES.map((service) => (
               <li
                 key={service}
                 className="service-item"
                 style={{
                   display: "flex",
-                  alignItems: "baseline",
-                  gap: "16px",
+                  alignItems: "center",
+                  gap: "14px",
                 }}
               >
                 <span
                   style={{
-                    fontFamily: "var(--font-mono, 'Source Code Pro', monospace)",
-                    fontSize: "12px",
-                    fontWeight: 600,
-                    letterSpacing: "0.05em",
-                    color: "var(--color-text-secondary, #57534E)",
-                    minWidth: "28px",
-                    userSelect: "none",
+                    width: "6px",
+                    height: "6px",
+                    borderRadius: "50%",
+                    backgroundColor: "var(--color-primary, #78716C)",
                     flexShrink: 0,
+                    opacity: 0.85,
                   }}
-                >
-                  {String(index + 1).padStart(2, "0")}
-                </span>
+                  aria-hidden="true"
+                />
 
                 <span
                   style={{
                     fontFamily: "var(--font-sans, 'Inter', sans-serif)",
-                    fontSize: "18px",
+                    fontSize: "17px",
                     fontWeight: 400,
                     color: "var(--color-text-primary, #1C1917)",
                     transition: "color 0.2s ease",
@@ -137,7 +142,7 @@ export default function ServicesSection() {
                 </span>
               </li>
             ))}
-          </ol>
+          </ul>
         </div>
       </div>
 

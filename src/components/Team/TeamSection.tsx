@@ -36,20 +36,20 @@ const TEAM_MEMBERS: TeamMember[] = [
     id: 5,
     name: "Tanmay Bhattacharyya",
     role: "Surveyor",
-    image: "/Team/5 Tanmay Bhattacharyya- Surveyor.jpg",
+    image: "/Team/Tanmoy.png",
   },
   {
     id: 6,
     name: "Dipayan Saha",
     role: "Legal Head",
-    image: "/Team/6 Dipayan Saha- Legal Head.jpg",
+    image: "/Team/Dipayan.png",
   },
-  // {
-  //   id: 7,
-  //   name: "Soumik Parui",
-  //   role: "Technical Head",
-  //   image: "/Team/7 Soumik Parui- Technical Head.jpg",
-  // },
+  {
+    id: 7,
+    name: "Soumik Parui",
+    role: "Technical Head",
+    image: "/Team/7 Soumik Parui- Technical Head.jpg",
+  },
   {
     id: 8,
     name: "Subham Manna",
@@ -145,7 +145,8 @@ export default function TeamSection() {
                   style={{
                     objectFit: "cover",
                     objectPosition: "top center",
-                  }} alt={""}
+                  }}
+                  alt={`${member.name} - ${member.role} at North11 Architects, Howrah`}
                 />
               </div>
 
