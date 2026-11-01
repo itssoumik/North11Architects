@@ -130,7 +130,7 @@ const jsonLd = {
         "@id": `${siteUrl}/#organization`,
       },
       image: `${siteUrl}/Team/1%20Sahnik%20Parui-%20Founder%20%26%20Chief%20Architect.jpg`,
-      email: "chiefachitect@duck.com",
+      email: "chiefarchitect@duck.com",
       telephone: "+918697208818",
       url: `${siteUrl}/team`,
       description:
@@ -153,7 +153,7 @@ const jsonLd = {
       },
       description:
         "Leading architecture and engineering firm in Howrah, West Bengal founded by Sahnik Parui. Delivering comprehensive architectural design, structural engineering, building plan sanctions, and project management.",
-      email: ["chiefachitect@duck.com", "executivedirector@duck.com"],
+      email: ["chiefarchitect@duck.com", "executivedirector@duck.com"],
       telephone: "+918697208818",
       address: {
         "@type": "PostalAddress",
@@ -171,7 +171,7 @@ const jsonLd = {
       image: `${siteUrl}/Logo/logo transparent.png`,
       description:
         "Top architectural and engineering firm in Howrah, West Bengal offering architectural drawings, building plan sanctions, structural design, interior design, 3D elevation, and surveying.",
-      email: ["chiefachitect@duck.com", "executivedirector@duck.com"],
+      email: ["chiefarchitect@duck.com", "executivedirector@duck.com"],
       telephone: "+918697208818",
       founder: {
         "@id": `${siteUrl}/#sahnikparui`,

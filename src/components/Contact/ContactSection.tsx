@@ -97,7 +97,7 @@ export default function ContactSection() {
                   Chief Architect
                 </span>
                 <a
-                  href="mailto:chiefachitect@duck.com"
+                  href="mailto:chiefarchitect@duck.com"
                   style={{
                     fontFamily: "var(--font-sans, 'Inter', sans-serif)",
                     fontSize: "17px",
@@ -117,7 +117,7 @@ export default function ContactSection() {
                     e.currentTarget.style.color = "var(--color-text-primary, #1C1917)";
                   }}
                 >
-                  chiefachitect@duck.com
+                  chiefarchitect@duck.com
                 </a>
               </div>
 
@@ -468,14 +468,14 @@ export default function ContactSection() {
                 We are always eager to meet motivated architects, draftspersons, structural
                 engineers, and surveyors. You can mail your CV and portfolio to{" "}
                 <a
-                  href="mailto:chiefachitect@duck.com"
+                  href="mailto:chiefarchitect@duck.com"
                   style={{
                     color: "var(--color-text-primary, #1C1917)",
                     fontWeight: 600,
                     textDecoration: "underline",
                   }}
                 >
-                  chiefachitect@duck.com
+                  chiefarchitect@duck.com
                 </a>
                 .
               </p>
