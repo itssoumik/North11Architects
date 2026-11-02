@@ -48,7 +48,7 @@ const TEAM_MEMBERS: TeamMember[] = [
     id: 7,
     name: "Soumik Parui",
     role: "Technical Head",
-    image: "/Team/7 Soumik Parui- Technical Head.jpg",
+    image: "/Team/soumik.png",
   },
   {
     id: 8,

@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "North11 Architects & Planners",
     short_name: "North11",
     description:
-      "Leading architecture and engineering firm crafting spaces where form meets eternal function.",
+      "North11 Architects & Planners is a leading architecture and engineering firm in Howrah, West Bengal.",
     start_url: "/",
     display: "standalone",
     background_color: "#0c0d0e",
