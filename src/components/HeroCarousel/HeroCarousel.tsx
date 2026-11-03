@@ -31,7 +31,7 @@ const slides: SlideData[] = [
     desktopSrc: "/Landscape Image/3.png",
     mobileSrc: "/Potrait Image/3.png",
     title: "RESIDENTIAL PROJECT",
-    subtitle: "Domjur, Howrah",
+    subtitle: "Neo-Classical Elevation",
   },
   {
     id: 4,

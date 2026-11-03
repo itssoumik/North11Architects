@@ -17,6 +17,8 @@ const SERVICES = [
   "BL&LRO Land Mutation",
   "Land Classification & Conversion",
   "Municipal Corporation Mutation",
+  "Urban Land Ceiling",
+  "Fire Safety License",
 ];
 
 
@@ -138,7 +140,6 @@ export default function ServicesSection() {
                     fontSize: "17px",
                     fontWeight: 400,
                     color: "var(--color-text-primary, #1C1917)",
-                    transition: "color 0.2s ease",
                   }}
                 >
                   {service}
@@ -150,10 +151,6 @@ export default function ServicesSection() {
       </div>
 
       <style>{`
-        .service-item:hover span:last-child {
-          color: var(--color-primary, #78716C) !important;
-        }
-
         /* Tablet/Mobile Breakpoint */
         @media (max-width: 992px) {
           .services-content-grid {
